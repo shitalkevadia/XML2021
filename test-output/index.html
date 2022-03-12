@@ -136,9 +136,9 @@
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-KTKLAPV&apos;, ip: &apos;192.168.0.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Nerdy\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50463}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1074dc69bc733e6b4688969b337bd75c
-*** Element info: {Using=xpath, value=//*[@id=&quot;page-wrapper&quot;]/div[2]/div/h2}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Nerdy\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59589}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f56dd4b53a6c3968be3a2483288d04e0
+*** Element info: {Using=xpath, value=//*[@id=&quot;username&quot;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -151,9 +151,9 @@ Session ID: 1074dc69bc733e6b4688969b337bd75c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.getText(Unknown Source)
-	at page.DashBoardPage.varifyDashbardHeader(DashBoardPage.java:28)
-	at test.AddCustomerTest.validUserShouldBeAbleToAddCustomerFromListCustomer(AddCustomerTest.java:77)
+	at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
+	at page.LoginPage.insertuserName(LoginPage.java:27)
+	at test.AddCustomerTest.validUserShouldBeAbleToAddCustomerFromListCustomer(AddCustomerTest.java:72)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
@@ -228,12 +228,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validUserShouldBeAbleToAddCustomerFromListCustomer')
 data.setCell(0, 2, 'test.AddCustomerTest')
-data.setCell(0, 3, 11313);
+data.setCell(0, 3, 6820);
 window.suiteTableData['regression']= { tableData: data, tableDiv: 'times-div-regression'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-regression">
               </div> <!-- times-div-regression -->
             </div> <!-- times-div -->
