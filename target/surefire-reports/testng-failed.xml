@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Command line suite]">
-  <test thread-count="5" verbose="0" name="Command line test(failed)">
+<suite thread-count="10" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [regression]">
+  <test thread-count="10" verbose="0" name="LoginTest(failed)">
+    <parameter name="Zip" value="a765545"/>
+    <parameter name="CompanyName" value="Techfios"/>
+    <parameter name="UserName" value="demo@techfios.com"/>
+    <parameter name="Email" value="msexcell@gmail.com"/>
+    <parameter name="Address" value="Techfios Building"/>
+    <parameter name="Phone" value="a235677"/>
+    <parameter name="State" value="Tx"/>
+    <parameter name="FullName" value="Excel Project"/>
+    <parameter name="Country" value="United Kingdom"/>
+    <parameter name="City" value="Carrolton"/>
+    <parameter name="Password" value="abc123"/>
     <classes>
       <class name="test.LoginTest">
         <methods>
-          <include name="validUserShoulBeAbleToLogin"/>
+          <include name="validUserShoulBeAbleToLoginOnly"/>
         </methods>
       </class> <!-- test.LoginTest -->
       <class name="test.AddCustomerTest">
         <methods>
-          <include name="validUserShouldBeAbleToAddCustomerFromListCustomer"/>
-          <include name="validUserShouldBeAbleToAddCustomer"/>
+          <include name="validUserShouldBeAbleToAddCustomerFromListCustomer" invocation-numbers="0"/>
         </methods>
       </class> <!-- test.AddCustomerTest -->
     </classes>
-  </test> <!-- Command line test(failed) -->
-</suite> <!-- Failed suite [Command line suite] -->
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [regression] -->

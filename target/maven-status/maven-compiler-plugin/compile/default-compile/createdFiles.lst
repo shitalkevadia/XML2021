@@ -1,5 +1,4 @@
 page\DashBoardPage.class
-page\ListCustomerPage.class
 page\AddCustomerPage.class
 util\BrowserFactory.class
 page\BasePage.class

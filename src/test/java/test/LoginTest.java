@@ -14,8 +14,8 @@ public class LoginTest {
 	WebDriver driver;
 
 	@Test
-	@Parameters({"UserName", "password"})
-	public void validUserShoulBeAbleToLogin(String userName, String password) throws InterruptedException {
+	@Parameters({"u", "p"})
+	public void validUserShoulBeAbleToLoginOnly(String userName, String password) throws InterruptedException {
 		
 		driver = BrowserFactory.init();
 		LoginPage loginPage = PageFactory.initElements(driver,LoginPage.class);

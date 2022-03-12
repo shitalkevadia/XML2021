@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-regression">
-                    <span>C:\Users\Kevadia\QASeptember2021\XML_PJ\src\main\java\testData\regression.xml</span>
+                    <span>C:\Users\Nerdy\Desktop\test\test10\XML2021\src\main\java\testData\regression.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-regression">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-regression" title="test.LoginTest" hash-for-method="validUserShoulBeAbleToLogin">validUserShoulBeAbleToLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-regression" title="test.AddCustomerTest" hash-for-method="validUserShouldBeAbleToAddCustomerFromListCustomer(demo@techfios.com, abc123, Excel Project, Techfios, msexcell@gmail.com, a235677, Techfios Building, ...)">validUserShouldBeAbleToAddCustomerFromListCustomer(demo@techfios.com, abc123, Excel Project, Techfios, msexcell@gmail.com, a235677, Techfios Building, ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-regression -->
@@ -122,19 +122,40 @@
           <div class="suite-regression-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">test.LoginTest</span>
+              <span class="class-name">test.AddCustomerTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validUserShoulBeAbleToLogin">
-                  </a> <!-- validUserShoulBeAbleToLogin -->
-                  <span class="method-name">validUserShoulBeAbleToLogin</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Parameter &apos;password&apos; is required by @Test on method validUserShoulBeAbleToLogin but has not been marked @Optional or defined
-in C:\Users\Kevadia\QASeptember2021\XML_PJ\src\main\java\testData\regression.xml
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 26 stack frames
+                  <a name="validUserShouldBeAbleToAddCustomerFromListCustomer(demo@techfios.com, abc123, Excel Project, Techfios, msexcell@gmail.com, a235677, Techfios Building, ...)">
+                  </a> <!-- validUserShouldBeAbleToAddCustomerFromListCustomer(demo@techfios.com, abc123, Excel Project, Techfios, msexcell@gmail.com, a235677, Techfios Building, ...) -->
+                  <span class="method-name">validUserShouldBeAbleToAddCustomerFromListCustomer</span>
+                  <span class="parameters">(demo@techfios.com, abc123, Excel Project, Techfios, msexcell@gmail.com, a235677, Techfios Building, Carrolton, United Kingdom, Tx, a765545)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=99.0.4844.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KTKLAPV&apos;, ip: &apos;192.168.0.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Nerdy\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50463}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1074dc69bc733e6b4688969b337bd75c
+*** Element info: {Using=xpath, value=//*[@id=&quot;page-wrapper&quot;]/div[2]/div/h2}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.getText(Unknown Source)
+	at page.DashBoardPage.varifyDashbardHeader(DashBoardPage.java:28)
+	at test.AddCustomerTest.validUserShouldBeAbleToAddCustomerFromListCustomer(AddCustomerTest.java:77)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -143,27 +164,27 @@ in C:\Users\Kevadia\QASeptember2021\XML_PJ\src\main\java\testData\regression.xml
         </div> <!-- panel regression -->
         <div panel-name="test-xml-regression" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Kevadia\QASeptember2021\XML_PJ\src\main\java\testData\regression.xml</span>
+            <span class="header-content">C:\Users\Nerdy\Desktop\test\test10\XML2021\src\main\java\testData\regression.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;regression&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;regression&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;LoginTest&quot;&gt;
+    &lt;parameter name=&quot;p&quot; value=&quot;abc123&quot;/&gt;
     &lt;parameter name=&quot;Zip&quot; value=&quot;a765545&quot;/&gt;
     &lt;parameter name=&quot;CompanyName&quot; value=&quot;Techfios&quot;/&gt;
-    &lt;parameter name=&quot;UserName&quot; value=&quot;demo@techfios.com&quot;/&gt;
     &lt;parameter name=&quot;Email&quot; value=&quot;msexcell@gmail.com&quot;/&gt;
     &lt;parameter name=&quot;Address&quot; value=&quot;Techfios Building&quot;/&gt;
+    &lt;parameter name=&quot;u&quot; value=&quot;demo@techfios.com&quot;/&gt;
     &lt;parameter name=&quot;Phone&quot; value=&quot;a235677&quot;/&gt;
     &lt;parameter name=&quot;State&quot; value=&quot;Tx&quot;/&gt;
     &lt;parameter name=&quot;FullName&quot; value=&quot;Excel Project&quot;/&gt;
+    &lt;parameter name=&quot;Country&quot; value=&quot;United Kingdom&quot;/&gt;
     &lt;parameter name=&quot;City&quot; value=&quot;Carrolton&quot;/&gt;
-    &lt;parameter name=&quot;Password&quot; value=&quot;abc123&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.LoginTest&quot;/&gt;
-      &lt;class name=&quot;page.AddCustomerPage&quot;/&gt;
+      &lt;class name=&quot;test.AddCustomerTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- LoginTest --&gt;
 &lt;/suite&gt; &lt;!-- regression --&gt;
@@ -177,7 +198,7 @@ in C:\Users\Kevadia\QASeptember2021\XML_PJ\src\main\java\testData\regression.xml
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">LoginTest (2 classes)</span>
+                <span class="test-name">LoginTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -205,14 +226,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validUserShoulBeAbleToLogin')
-data.setCell(0, 2, 'test.LoginTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'validUserShouldBeAbleToAddCustomerFromListCustomer')
+data.setCell(0, 2, 'test.AddCustomerTest')
+data.setCell(0, 3, 11313);
 window.suiteTableData['regression']= { tableData: data, tableDiv: 'times-div-regression'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-regression">
               </div> <!-- times-div-regression -->
             </div> <!-- times-div -->
@@ -237,6 +258,14 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.AddCustomerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validUserShouldBeAbleToAddCustomerFromListCustomer(demo@techfios.com, abc123, Excel Project, Techfios, msexcell@gmail.com, a235677, Techfios Building, ...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

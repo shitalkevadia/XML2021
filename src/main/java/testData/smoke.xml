@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="smoke">
 
 	<test name="LoginTest">
 
-		<parameter name="UserName" value="demo@techfios.com"></parameter>
-		<parameter name="Password" value="abc123" />
+		<parameter name="u" value="demo@techfios.com" />
+		<parameter name="p" value="abc123" />
 
 		<classes>
 			<class name="test.LoginTest"></class>

@@ -5,13 +5,12 @@
     <classes>
       <class name="test.LoginTest">
         <methods>
-          <include name="validUserShoulBeAbleToLogin"/>
+          <include name="validUserShoulBeAbleToLoginOnly"/>
         </methods>
       </class> <!-- test.LoginTest -->
       <class name="test.AddCustomerTest">
         <methods>
           <include name="validUserShouldBeAbleToAddCustomerFromListCustomer"/>
-          <include name="validUserShouldBeAbleToAddCustomer"/>
         </methods>
       </class> <!-- test.AddCustomerTest -->
     </classes>

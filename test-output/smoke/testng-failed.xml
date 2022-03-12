@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [smoke]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [smoke]">
   <test thread-count="5" name="LoginTest(failed)">
-    <parameter name="UserName" value="demo@techfios.com"/>
-    <parameter name="Password" value="abc123"/>
+    <parameter name="p" value="abc123"/>
+    <parameter name="u" value="demo@techfios.com"/>
     <classes>
       <class name="test.LoginTest">
         <methods>
-          <include name="validUserShoulBeAbleToLogin"/>
+          <include name="validUserShoulBeAbleToLoginOnly" invocation-numbers="0"/>
         </methods>
       </class> <!-- test.LoginTest -->
     </classes>
